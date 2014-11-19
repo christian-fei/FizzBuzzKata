@@ -3,7 +3,7 @@ package cf.fizzbuzz.app;
 public class FizzBuzz {
 
 	public String evaluate(int number) {
-		if( 3==number ) return "Fizz";
+		if( number%3 == 0 && number>0 ) return "Fizz";
 		return String.valueOf(number);
 	}
 

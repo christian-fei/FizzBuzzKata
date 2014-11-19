@@ -25,5 +25,10 @@ public class FizzBuzzTest {
 	public void evaluate3_returnsFizz() throws Exception {
 		assertEquals("Fizz", fb.evaluate(3));
 	}
+	
+	@Test
+	public void evaluateMultipleOfThrees_returnsFizz() throws Exception {
+		assertEquals("Fizz", fb.evaluate(6));
+	}
 
 }
