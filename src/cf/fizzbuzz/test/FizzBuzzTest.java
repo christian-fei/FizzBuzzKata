@@ -29,10 +29,15 @@ public class FizzBuzzTest {
 	@Test
 	public void evaluateMultipleOfThrees_returnsFizz() throws Exception {
 		assertEquals("Fizz", fb.evaluate(6));
+		assertEquals("Fizz", fb.evaluate(9));
+		assertEquals("Fizz", fb.evaluate(12));
 	}
 
 	@Test
 	public void evaluateMultipleOfFive_returnsBuzz() throws Exception {
 		assertEquals("Buzz", fb.evaluate(5));
+		assertEquals("Buzz", fb.evaluate(10));
+		assertEquals("Buzz", fb.evaluate(15));
+		assertEquals("Buzz", fb.evaluate(20));
 	}
 }
