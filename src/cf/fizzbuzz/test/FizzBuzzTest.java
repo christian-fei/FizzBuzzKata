@@ -45,4 +45,12 @@ public class FizzBuzzTest {
 		assertEquals("FizzBuzz", fb.evaluate(15));
 		assertEquals("FizzBuzz", fb.evaluate(30));
 	}
+	
+	@Test
+	public void evaluateOtherNumbers_returnsNumber() throws Exception {
+		assertEquals("1", fb.evaluate(1));
+		assertEquals("2", fb.evaluate(2));
+		assertEquals("4", fb.evaluate(4));
+
+	}
 }
