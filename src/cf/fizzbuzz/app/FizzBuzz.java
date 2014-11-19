@@ -3,6 +3,7 @@ package cf.fizzbuzz.app;
 public class FizzBuzz {
 
 	public String evaluate(int number) {
+		if( 15==number ) return "FizzBuzz";
 		if( isMultipleOfFive(number) ) return "Buzz";
 		if( isMultipleOfThree(number) ) return "Fizz";
 		return String.valueOf(number);

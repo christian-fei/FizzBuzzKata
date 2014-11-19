@@ -37,7 +37,11 @@ public class FizzBuzzTest {
 	public void evaluateMultipleOfFive_returnsBuzz() throws Exception {
 		assertEquals("Buzz", fb.evaluate(5));
 		assertEquals("Buzz", fb.evaluate(10));
-		assertEquals("Buzz", fb.evaluate(15));
 		assertEquals("Buzz", fb.evaluate(20));
+	}
+	
+	@Test
+	public void evaluateMultipleOfFifteen_returnsFizzBuzz() throws Exception {
+		assertEquals("FizzBuzz", fb.evaluate(15));
 	}
 }
