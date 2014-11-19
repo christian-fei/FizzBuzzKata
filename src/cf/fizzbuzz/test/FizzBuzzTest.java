@@ -1,6 +1,6 @@
 package cf.fizzbuzz.test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -19,6 +19,13 @@ public class FizzBuzzTest {
 	@Test
 	public void evaluate0_returns0() {
 		assertEquals("0", fb.evaluate(0));
+	}
+	
+	@Test
+	public void evaluateOtherNumbers_returnsNumber() throws Exception {
+		for (int i = 0; i < 100; i++) {
+			assertEquals(String.valueOf(i) , fb.evaluate(i));
+		}
 	}
 
 }
