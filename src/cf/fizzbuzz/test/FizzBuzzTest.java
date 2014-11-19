@@ -22,10 +22,8 @@ public class FizzBuzzTest {
 	}
 	
 	@Test
-	public void evaluateOtherNumbers_returnsNumber() throws Exception {
-		for (int i = 0; i < 100; i++) {
-			assertEquals(String.valueOf(i) , fb.evaluate(i));
-		}
+	public void evaluate3_returnsFizz() throws Exception {
+		assertEquals("Fizz", fb.evaluate(3));
 	}
 
 }
