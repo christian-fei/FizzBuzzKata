@@ -3,7 +3,7 @@ package cf.fizzbuzz.app;
 public class FizzBuzz {
 
 	public String evaluate(int number) {
-		return "" + number;
+		return String.valueOf(number);
 	}
 
 }

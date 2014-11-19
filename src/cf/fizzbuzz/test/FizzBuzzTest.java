@@ -2,7 +2,6 @@ package cf.fizzbuzz.test;
 
 import static org.junit.Assert.*;
 
-import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,16 +9,23 @@ import cf.fizzbuzz.app.FizzBuzz;
 
 public class FizzBuzzTest {
 
+	private FizzBuzz fb;
+
+	@Before
+	public void setUp() throws Exception {
+		fb = new FizzBuzz();
+	}
+
 	@Test
-	public void number0_returns0() {
-		FizzBuzz fb = new FizzBuzz();
-		assertEquals("0",fb.evaluate(0));
+	public void evaluate0_returns0() {
+		assertEquals("0", fb.evaluate(0));
 	}
 	
 	@Test
-	public void number1_returns1() throws Exception {
-		FizzBuzz fb = new FizzBuzz();
-		assertEquals("1",fb.evaluate(1));		
+	public void evaluateOtherNumbers_returnsNumber() throws Exception {
+		for (int i = 0; i < 100; i++) {
+			assertEquals(String.valueOf(i) , fb.evaluate(i));
+		}
 	}
 
 }
