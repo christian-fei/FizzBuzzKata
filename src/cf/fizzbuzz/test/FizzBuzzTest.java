@@ -19,10 +19,15 @@ public class FizzBuzzTest {
 		assertEquals("2", FizzBuzz.getExclamationFor(2));
 		assertEquals("4", FizzBuzz.getExclamationFor(4));
 	}
-	
+
 	@Test
 	public void getExclamationFor_number3_returnsFizz() {
 		assertEquals("Fizz", FizzBuzz.getExclamationFor(3));
+	}
+	
+	@Test
+	public void getExclamationFor_number5_returnsBuzz() {
+		assertEquals("Buzz", FizzBuzz.getExclamationFor(5));
 	}
 	
 
