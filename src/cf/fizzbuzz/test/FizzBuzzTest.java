@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import cf.fizzbuzz.app.FizzBuzz;
+import cf.fizzbuzz.app.FizzBuzzFactory;
 
 public class FizzBuzzTest {
 
@@ -13,7 +14,7 @@ public class FizzBuzzTest {
 
 	@Before
 	public void setUp() throws Exception {
-		fb = new FizzBuzz();
+		fb = FizzBuzzFactory.get();
 	}
 
 	@Test

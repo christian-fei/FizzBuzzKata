@@ -1,10 +1,20 @@
 package cf.fizzbuzz.app;
 
+import java.util.List;
+
 public class FizzBuzz {
 
+	private List<Rule> rules;
+
+	public FizzBuzz(List<Rule> rules) {
+		this.rules = rules;
+	}
+
 	public String evaluate(int number) {
-		if (isZero(number))
-			return "0";
+		for (Rule rule : rules) {
+			if( rule.canHandle(number))
+				return rule.apply();
+		}
 		if (isFizzBuzz(number))
 			return "FizzBuzz";
 		if (isBuzz(number))
