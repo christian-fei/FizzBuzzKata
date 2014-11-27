@@ -6,6 +6,7 @@ import java.util.List;
 public class FizzBuzz {
 	
 	private static List<Rule> rules = new ArrayList<Rule>() {{
+		add(new FizzRule());
 		add(new SimpleNumberRule());
 	}};
 	
@@ -14,8 +15,6 @@ public class FizzBuzz {
 			return "FizzBuzz";
 		if (number%5 == 0 && number > 0)
 			return "Buzz";
-		if (number%3 == 0 && number > 0)
-			return "Fizz";
 		for (Rule rule : rules) {
 			if(rule.canHandle(number))
 				return rule.evaluate(number);
