@@ -6,7 +6,7 @@ import java.util.List;
 public class FizzBuzz {
 	
 	private static List<Rule> rules = new ArrayList<Rule>() {{
-		add(new NullRule());
+		add(new SimpleNumberRule());
 	}};
 	
 	public static String getExclamationFor(int number) {
