@@ -33,8 +33,9 @@ public class FizzBuzzTest {
 	}
 
 	@Test
-	public void getExclamationFor_number15_returnsFizzBuzz() {
+	public void getExclamationFor_multiplesOf15_returnsFizzBuzz() {
 		assertEquals("FizzBuzz", FizzBuzz.getExclamationFor(15));
+		assertEquals("FizzBuzz", FizzBuzz.getExclamationFor(30));
 	}
 
 }
