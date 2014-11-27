@@ -12,7 +12,7 @@ public class FizzBuzzTest {
 	public void getExclamationFor_number0_returns0() {
 		assertEquals("0", FizzBuzz.getExclamationFor(0));
 	}
-	
+
 	@Test
 	public void getExclamationFor_simpleNumbers_returnsNumber() {
 		assertEquals("1", FizzBuzz.getExclamationFor(1));
@@ -24,11 +24,10 @@ public class FizzBuzzTest {
 	public void getExclamationFor_number3_returnsFizz() {
 		assertEquals("Fizz", FizzBuzz.getExclamationFor(3));
 	}
-	
+
 	@Test
 	public void getExclamationFor_number5_returnsBuzz() {
 		assertEquals("Buzz", FizzBuzz.getExclamationFor(5));
 	}
-	
 
 }
