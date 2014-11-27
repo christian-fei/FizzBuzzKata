@@ -32,7 +32,7 @@ public class FizzBuzzTest {
 	}
 	
 	@Test
-	public void testName() throws Exception {
+	public void evaluate_multipleOf3_returnsFizz() throws Exception {
 		assertEquals("Fizz",fb.evaluate(6));
 		assertEquals("Fizz",fb.evaluate(9));
 	}
