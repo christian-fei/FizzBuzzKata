@@ -31,11 +31,17 @@ public class FizzBuzzTest {
 		assertEquals("Fizz",fb.evaluate(6));
 		assertEquals("Fizz",fb.evaluate(9));
 	}
-	
+
 	@Test
 	public void evaluate_multipleOf5_returnsBuzz() throws Exception {
 		assertEquals("Buzz",fb.evaluate(5));
 		assertEquals("Buzz",fb.evaluate(10));
+	}
+	
+	@Test
+	public void evaluate_multipleOf15_returnsFizzBuzz() throws Exception {
+		assertEquals("FizzBuzz",fb.evaluate(15));
+		assertEquals("FizzBuzz",fb.evaluate(30));
 	}
 	
 }
