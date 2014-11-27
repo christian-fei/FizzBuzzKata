@@ -1,6 +1,6 @@
 package cf.fizzbuzz.test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 import org.junit.Test;
 
@@ -20,6 +20,10 @@ public class FizzBuzzTest {
 		assertEquals("4", FizzBuzz.getExclamationFor(4));
 	}
 	
+	@Test
+	public void getExclamationFor_number3_returnsFizz() {
+		assertEquals("Fizz", FizzBuzz.getExclamationFor(3));
+	}
 	
 
 }
