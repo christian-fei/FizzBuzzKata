@@ -7,6 +7,7 @@ public class FizzBuzz {
 	
 	private static List<Rule> rules = new ArrayList<Rule>() {{
 		add(new FizzRule());
+		add(new BuzzRule());
 		add(new SimpleNumberRule());
 	}};
 	
