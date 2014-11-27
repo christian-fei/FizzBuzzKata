@@ -3,11 +3,13 @@ package cf.fizzbuzz.app;
 public class FizzBuzz {
 
 	public String evaluate(int number) {
-		if(number == 3)
+		if (isFizz(number))
 			return "Fizz";
-		if (number == 1)
-			return "1";
-		return "0";
+		return Integer.toString(number);
+	}
+	
+	private boolean isFizz(int number) {
+		return number == 3;
 	}
 
 }
