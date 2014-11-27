@@ -21,8 +21,9 @@ public class FizzBuzzTest {
 	}
 
 	@Test
-	public void getExclamationFor_number3_returnsFizz() {
+	public void getExclamationFor_multiplesOf3_returnsFizz() {
 		assertEquals("Fizz", FizzBuzz.getExclamationFor(3));
+		assertEquals("Fizz", FizzBuzz.getExclamationFor(6));
 	}
 
 	@Test
