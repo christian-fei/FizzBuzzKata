@@ -29,7 +29,7 @@ public class FizzBuzzTest {
 	public void getExclamationFor_number5_returnsBuzz() {
 		assertEquals("Buzz", FizzBuzz.getExclamationFor(5));
 	}
-	
+
 	@Test
 	public void getExclamationFor_number15_returnsFizzBuzz() {
 		assertEquals("FizzBuzz", FizzBuzz.getExclamationFor(15));
