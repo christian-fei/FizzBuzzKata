@@ -8,6 +8,7 @@ public class FizzBuzzFactory {
 	static List<Rule> rules = new ArrayList<Rule>(){{
 		add(new NullRule());
 		add(new FizzBuzzRule());
+		add(new BuzzRule());
 	}};
 	
 	public static FizzBuzz get() {
