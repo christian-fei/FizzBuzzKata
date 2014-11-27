@@ -15,8 +15,6 @@ public class FizzBuzz {
 			if( rule.canHandle(number))
 				return rule.apply();
 		}
-		if (isFizzBuzz(number))
-			return "FizzBuzz";
 		if (isBuzz(number))
 			return "Buzz";
 		if (isFizz(number))
