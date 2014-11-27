@@ -37,4 +37,9 @@ public class FizzBuzzTest {
 		assertEquals("Fizz",fb.evaluate(9));
 	}
 	
+	@Test
+	public void evaluate_number5_returnsBuzz() throws Exception {
+		assertEquals("Buzz",fb.evaluate(5));
+	}
+	
 }
