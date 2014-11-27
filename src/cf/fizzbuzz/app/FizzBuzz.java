@@ -1,7 +1,14 @@
 package cf.fizzbuzz.app;
 
-public class FizzBuzz {
+import java.util.ArrayList;
+import java.util.List;
 
+public class FizzBuzz {
+	
+	private static List<Rule> rules = new ArrayList<Rule>() {{
+		add(new NullRule());
+	}};
+	
 	public static String getExclamationFor(int number) {
 		if (number%15 == 0 && number > 0)
 			return "FizzBuzz";
@@ -9,7 +16,11 @@ public class FizzBuzz {
 			return "Buzz";
 		if (number%3 == 0 && number > 0)
 			return "Fizz";
-		return Integer.toString(number);
+		for (Rule rule : rules) {
+			if(rule.canHandle(number))
+				return rule.evaluate(number);
+		}
+		return null;
 	}
 
 }
