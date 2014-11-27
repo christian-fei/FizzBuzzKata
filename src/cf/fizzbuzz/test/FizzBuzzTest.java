@@ -31,4 +31,10 @@ public class FizzBuzzTest {
 		assertEquals("Fizz",fb.evaluate(3));
 	}
 	
+	@Test
+	public void testName() throws Exception {
+		assertEquals("Fizz",fb.evaluate(6));
+		assertEquals("Fizz",fb.evaluate(9));
+	}
+	
 }
