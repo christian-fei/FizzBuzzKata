@@ -9,6 +9,7 @@ public class FizzBuzzFactory {
 		add(new NullRule());
 		add(new FizzBuzzRule());
 		add(new BuzzRule());
+		add(new FizzRule());
 	}};
 	
 	public static FizzBuzz get() {
