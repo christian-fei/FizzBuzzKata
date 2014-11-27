@@ -26,4 +26,9 @@ public class FizzBuzzTest {
 		assertEquals("1",fb.evaluate(1));		
 	}
 	
+	@Test
+	public void evaluate_number3_returnsFizz() throws Exception {
+		assertEquals("Fizz",fb.evaluate(3));
+	}
+	
 }
