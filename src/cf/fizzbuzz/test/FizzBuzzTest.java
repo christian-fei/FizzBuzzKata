@@ -27,21 +27,11 @@ public class FizzBuzzTest {
 	}
 	
 	@Test
-	public void evaluate_number3_returnsFizz() throws Exception {
-		assertEquals("Fizz",fb.evaluate(3));
-	}
-
-	@Test
 	public void evaluate_multipleOf3_returnsFizz() throws Exception {
 		assertEquals("Fizz",fb.evaluate(6));
 		assertEquals("Fizz",fb.evaluate(9));
 	}
 	
-	@Test
-	public void evaluate_number5_returnsBuzz() throws Exception {
-		assertEquals("Buzz",fb.evaluate(5));
-	}
-
 	@Test
 	public void evaluate_multipleOf5_returnsBuzz() throws Exception {
 		assertEquals("Buzz",fb.evaluate(5));
