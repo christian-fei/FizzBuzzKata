@@ -16,6 +16,8 @@ public class FizzBuzzTest {
 	@Test
 	public void getExclamationFor_simpleNumbers_returnsNumber() {
 		assertEquals("1", FizzBuzz.getExclamationFor(1));
+		assertEquals("2", FizzBuzz.getExclamationFor(2));
+		assertEquals("4", FizzBuzz.getExclamationFor(4));
 	}
 	
 	
